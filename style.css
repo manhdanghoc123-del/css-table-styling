@@ -1,0 +1,51 @@
+/* Styling tổng thể trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 1. Thiết lập kích thước và gộp đường viền cho Bảng */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse; /* Gộp đường viền kép thành đơn */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 2. Đường viền và khoảng cách (padding) cho ô tiêu đề và ô dữ liệu */
+table, th, td {
+    border: 1px solid #444444;
+}
+
+th, td {
+    padding: 15px; /* Tạo khoảng cách giữa nội dung và đường viền */
+}
+
+/* 3. Định kiểu cho hàng tiêu đề (th) */
+th {
+    height: 50px;             /* Đặt chiều cao cho hàng tiêu đề */
+    text-align: left;         /* Căn trái nội dung tiêu đề */
+    background-color: #333333; /* Màu nền tối */
+    color: #ffffff;           /* Màu chữ trắng */
+}
+
+/* 4. Định kiểu cho ô dữ liệu (td) */
+td {
+    height: 60px;             /* Chiều cao ô dữ liệu */
+    vertical-align: bottom;   /* Căn nội dung xuống phía dưới theo chiều dọc */
+    background-color: #f2f2f2; /* Nền xám nhạt */
+    color: #333333;           /* Màu chữ xám đậm */
+}
+
+/* Hiệu ứng di chuột vào hàng (tùy chọn giúp bảng đẹp hơn) */
+tr:hover td {
+    background-color: #e2e2e2;
+}
